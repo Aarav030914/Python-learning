@@ -5,7 +5,6 @@ from food import Food
 from scoreboard import Score
 
 
-
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
@@ -13,8 +12,6 @@ screen.title("Snake Xenia")
 screen.tracer(0)
 
 snake_food = Food()
-
-
 
 tim = Snake(3, "white", "blue")
 
