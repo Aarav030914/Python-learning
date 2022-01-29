@@ -1,3 +1,7 @@
+# This is a pomdoro-timer programm.
+# You can have 25 min  work sessions and then a 5 min break.
+# After every 4 cycles of 25-5 work session, you will have a 20 min break
+
 from tkinter import Button, Label, PhotoImage, Tk, Canvas
 
 
@@ -34,11 +38,12 @@ window.title("Pomodoro")
 window.config(padx=50, pady=50, bg = OFF_WHITE)
 
 
-# Timer
+# Timer mechanism
 def timer(count):
     if not conti_aft_zero:
         count = 0
     canvas.itemconfig(timer_text, text=f"{int(count/60):02}:{int(count) % 60:02}")
+    
     if count > 0:
         window.after(1000, timer, count-1)    
     
