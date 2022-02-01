@@ -4,11 +4,9 @@ letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-#the console part
-print("Welcome to the PyPassword Generator!")
-nr_letters= int(input("How many letters would you like in your password?\n")) 
-nr_symbols = int(input("How many symbols would you like?\n"))
-nr_numbers = int(input("How many numbers would you like?\n"))
+nr_letters=  random.randint(2, 5)
+nr_symbols = random.randint(2, 5)
+nr_numbers = random.randint(2, 5)
 def generate():
     password = []
 
@@ -31,4 +29,3 @@ def generate():
     random.shuffle(password)
     new_tuple = tuple(password)
     return "".join(new_tuple)   
-print(generate())

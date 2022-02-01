@@ -1,7 +1,6 @@
 # This is a pomdoro-timer programm.
 # You can have 25 min  work sessions and then a 5 min break.
 # After every 4 cycles of 25-5 work session, you will have a 20 min break
-
 from tkinter import Button, Label, PhotoImage, Tk, Canvas
 
 
