@@ -29,7 +29,9 @@ while guess_is_on:
         tim.write(arg=answer, align="center", font=FONT)
         score += 1
         correct_guess.append(answer)
-        states_list.remove(answer)   
+        states_list.remove(answer)
+        print(state.x)
+        print(int(state.x))   
     else:
         pass
 
