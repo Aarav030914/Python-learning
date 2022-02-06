@@ -8,14 +8,14 @@ password = "nZNZs3iya7eDw7h"
 
 
 letter_list = [
-    "letter_templates/letter_1.txt",
-    "letter_templates/letter_2.txt",
-    "letter_templates/letter_3.txt"
+    "./day32/birthday-wisher-extrahard-start/letter_templates/letter_1.txt",
+    "./day32/birthday-wisher-extrahard-start/letter_templates/letter_2.txt",
+    "./day32/birthday-wisher-extrahard-start/letter_templates/letter_3.txt"
 ]
 
 
 today = datetime.datetime.now()
-data = pandas.read_csv("birthdays.csv")
+data = pandas.read_csv("./day32/birthday-wisher-extrahard-start/birthdays.csv")
 birthdays = data.to_dict()
 
 for key in range(len(data)):
