@@ -3,7 +3,7 @@ from random import choice
 from smtplib import SMTP
 
 my_email = "test.email.udemy@gmail.com"
-password = "nZNZs3iya7eDw7h"
+password = "" #Obviously, you won't get the password
 
 cur_day = datetime.datetime.today().weekday()
 if cur_day == 4:

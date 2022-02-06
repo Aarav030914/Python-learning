@@ -4,7 +4,7 @@ from smtplib import SMTP
 import pandas
 
 my_email = "test.email.udemy@gmail.com"
-password = "nZNZs3iya7eDw7h"
+password = "" #Obviously, you won't get the password
 
 
 letter_list = [
