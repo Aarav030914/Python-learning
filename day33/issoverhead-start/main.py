@@ -2,7 +2,7 @@ import config
 import smtplib 
 
 MY_EMAIL = "test.email.udemy@gmail.com"
-PASSWORD = "nZNZs3iya7eDw7h" #Obviously, you won't get the password
+PASSWORD = "" #Obviously, you won't get the password
 
 MY_LAT = 21.764473
 MY_LONG = 72.151932
