@@ -8,7 +8,7 @@ class QuizBrain:
     
     def ask_question(self):
         user_answer = input(f"Q {self.question_number + 1}: {self.question_list[self.question_number].text} (True/False)")
-        os.system("cls")
+        os.system("clear") # for linux based systems
         
         if user_answer == self.question_list[self.question_number].ans:
             print("You are correct")

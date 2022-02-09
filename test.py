@@ -1,6 +1,5 @@
+from urllib import response
 import requests
-
-def get_quote():
-    quote = requests.get(url="https://api.kanye.rest/")
-    print(quote.json())
-get_quote()    
+questions = requests.get(url="https://opentdb.com/api.php?amount=10&type=boolean")
+questions.raise_for_status()
+print(questions.json())
