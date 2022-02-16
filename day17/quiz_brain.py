@@ -1,3 +1,5 @@
+import html
+
 import os
 class QuizBrain:
     
@@ -7,7 +9,8 @@ class QuizBrain:
         self.score = 0
     
     def ask_question(self):
-        user_answer = input(f"Q {self.question_number + 1}: {self.question_list[self.question_number].text} (True/False)")
+        q_text = html.unescape(self.question_list[self.question_number].text)
+        user_answer = input(f"Q {self.question_number + 1}: {q_text} (True/False)")
         os.system("clear") # for linux based systems
         
         if user_answer == self.question_list[self.question_number].ans:
