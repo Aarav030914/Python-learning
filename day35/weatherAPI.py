@@ -4,12 +4,12 @@ import os
 parameters = {
     "lat":42.430420,
     "lon":19.259363,
-    "appid":"c7ea1a3837bd7e968c53d36d195b62fc",
+    "appid":"abcd",
     "exclude":"current,minutely,daily"
 }
 
-account_sid = "AC3e38aa2f1028efc3f4e31ece3082920a"
-auth_token = "49841c629171d06314fe17c9ba0e4a64"
+account_sid = "abcd"
+auth_token = "abcd"
 bring_umbrella = False
 
 data = requests.get(url="https://api.openweathermap.org/data/2.5/onecall", params=parameters)
