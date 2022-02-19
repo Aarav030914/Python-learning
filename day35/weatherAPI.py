@@ -1,6 +1,5 @@
 import requests
 from twilio.rest import Client
-import os
 parameters = {
     "lat":42.430420,
     "lon":19.259363,
