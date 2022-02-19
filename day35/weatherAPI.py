@@ -24,8 +24,8 @@ if bring_umbrella:
     message = client.messages \
                     .create(
                         body="I can rain today, don't forget your umbrella.",
-                        from_='++19377313747',
-                        to='+917487853240'
+                        from_='1234',
+                        to='1234'
                     )
     print(message.status)                                 
 
