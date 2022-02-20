@@ -1,4 +1,3 @@
-from pyexpat.errors import messages
 import requests
 import datetime
 from twilio.rest import Client
