@@ -1,8 +1,4 @@
-tup = ('A', 'A', 'B', 'B', 'A', 'C', 'C')
-d = {}
-for i in range(len(tup)):
-    d[tup[i]] = []
-for j in range(len(tup)):
-    d[tup[j]].append(j)
-print(d)
+l = [1, 2, 3]
+l[2] = 5
+print(l)
 
